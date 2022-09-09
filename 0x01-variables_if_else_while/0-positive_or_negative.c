@@ -5,7 +5,9 @@
 
 /*betty style doc for function main goes there*/
 /*main -entry point*/
-/*Description: identify positve and negative*/
+/**
+ * Description: identify positve and negative
+ */
 
 int main(void)
 {
