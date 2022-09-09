@@ -1,12 +1,14 @@
 #include<stdlib.h>
 #include<time.h>
+/* more headers goes there */
 #include<stdio.h>
-/*
-*betty style doc for function main goes there
-*main -entry point
-*Description: identify positve and negative
-*Return: always 0
-*/
+
+/*betty style doc for function main goes there*/
+/**
+ * main -entry point
+ *
+ * Return: always 0 (sucess)
+ */
 
 int main(void)
 {
