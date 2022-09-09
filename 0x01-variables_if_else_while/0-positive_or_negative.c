@@ -1,11 +1,12 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
-/**
-*betty style doc for function main goes there 
-*main -entry point
-*Description: identify positve and negative
-*/
+/* more headers goes there */
+
+/*betty style doc for function main goes there*/
+/*main -entry point*/
+/*Description: identify positve and negative*/
+
 int main(void)
 {
 	int n;
