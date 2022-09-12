@@ -1,29 +1,45 @@
 #include<stdio.h>
 /**
- *main -entry
- *Return: always true
+ * main -entry
+ *Return: alwys 0
  */
 int main(void)
 {
-	int i, j;
-
-	for (i = 0 ; i <= 98 ; i++)
+	int i, e, g, h, op1, op2;
+	i = e = g = h = 48;
+	while (h < 58)
 	{
-		for (j = i + 1 ; j <= 99 ; j++)
+		g=48;
+		while (g < 58)
+
 		{
-			putchar((i % 10) + '0');
-			putchar((i % 10) + '0');
-
-			putchar(' ');
-
-			putchar((i % 10) + '0');
-			putchar((j % 10) + '0');
-
-			if (i == 98 && j == 99)
-				continue;
-			putchar(',');
-			putchar(' ');
+			e=48;
+			while (e < 58)
+			{
+				i=48;
+				while (i < 58)
+				{
+					op1 = (h * 10) + g;
+					op2 = (e * 10) + i;
+					if (op1 < op2)
+					{
+						putchar(h);
+						putchar(g);
+						putchar(' ');
+						putchar(e);
+						putchar(i);
+						if (h == 57 && g == 56 && e == 57 && i == 57)
+							break;
+						putchar(',');
+						putchar(' ');
+					}
+					i++;
+				}
+				e++;
+			}
+			g++;
 		}
+		h++;
 	}
 	putchar('\n');
 	return (0);
