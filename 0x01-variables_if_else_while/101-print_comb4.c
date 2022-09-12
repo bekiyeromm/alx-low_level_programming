@@ -9,12 +9,10 @@ int main(void)
 
 	for (i = 0 ; i <= 7 ; i++)
 	{
-		for (j = i+1 ; j <= 8 ; j++)
+		for (j = i + 1 ; j <= 8 ; j++)
 		{
-			for (n = j+1 ; n <= 9 ; n++)
+			for (n = j + 1 ; n <= 9 ; n++)
 			{
-				/**if (i == n || j == n || j == i)
-				*	continue;*/
 				putchar((i % 10) + '0');
 				putchar((j % 10) + '0');
 				putchar((n % 10) + '0');
