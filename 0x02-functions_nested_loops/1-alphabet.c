@@ -2,9 +2,7 @@
 #include "main.h"
 /**
  * print_alphabet: prints the alphabet
- *
- * Return: zero
- * function declaration: printing char
+ * Description: 'the program's description'
  */
 void print_alphabet(void)
 {
