@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include "main.h"
 /**
- *msin -enry
+ * main -enry
  *
- *Return: rr
+ * Return: rr
  */
 int main(void)
 {
-	char *ch="_putchar";
+	char *ch = "_putchar";
+
 	while (*ch)
 	{
 		_putchar(*ch);
