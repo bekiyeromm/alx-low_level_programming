@@ -4,7 +4,7 @@
  * main -entry of function
  * Description: the program's description
  * print_alphabet -prints char
- * Description: print
+ *Return: return 0
  */
 void print_alphabet(void)
 {
