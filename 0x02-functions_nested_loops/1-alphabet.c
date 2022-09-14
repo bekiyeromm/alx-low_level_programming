@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * Description: 'the program's description'
+ * main -entry of function
+ * Description: the program's description
  */
 void print_alphabet(void)
 {
