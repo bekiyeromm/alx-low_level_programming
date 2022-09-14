@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<stdio.h>
 #include "main.h"
 /**
  * print_to_98 -print number up to 98 
