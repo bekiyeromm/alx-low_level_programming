@@ -3,6 +3,7 @@
 /**
  * main -entry of function
  * Description: the program's description
+ * print_alphabet -prints char
  */
 void print_alphabet(void)
 {
