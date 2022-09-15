@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include "main.h"
-/*
+/**
  * largest_number -find max
- * @: param 1
+ * @a: param 1
  * @b: param2
  * @c: param3
  * Return: always 0
