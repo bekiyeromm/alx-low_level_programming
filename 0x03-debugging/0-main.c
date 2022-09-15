@@ -1,15 +1,16 @@
 #include<stdio.h>
+#include "main.h"
 /**
- *positive_or_negative -func
+ * main -function entry
  *
- *@i: parameter
+ * Return: always zero
  */
-void positive_or_negative(int i)
+int main(void)
 {
-	if (n > 0)
-		printf("%d is positive", i);
-	else if (n < 0)
-		printf("%d is negative", i);
-	else
-		printf("%d is zero", i);
+	int i;
+
+	i = 0;
+	postitive_or_negative(0);
+	return (0);
+
 }
