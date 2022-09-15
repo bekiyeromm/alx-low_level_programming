@@ -18,7 +18,7 @@ int main(void)
 		 if (!(j % 3 == 0))
 		 {
 			 b = 5 * j;
-			 sum = sum + j;
+			 sum = sum + b;
 		 }
 	 }
 	 printf("%i\n", sum);
