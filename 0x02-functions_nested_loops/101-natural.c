@@ -8,7 +8,7 @@ int main(void)
 {
 	int i, j, a, b, sum = 0;
 
-	 for (i = 0; i < = (1024 / 3); i++)
+	 for (i = 0; i <= (1024 / 3); i++)
 	 {
 		 a = 3 * i;
 		 sum = sum + a;
