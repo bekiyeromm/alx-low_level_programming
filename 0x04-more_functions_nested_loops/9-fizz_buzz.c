@@ -8,17 +8,28 @@ int main(void)
 {
 	int i;
 
-	for (i = 1; i <= 100; i++)
+	for (i = 1; i < 100; i++)
 	{
-		if ((i % 3) == 0 && (i % 5) == 0)
-			_putchar("fizz buzz");
+		if ((i % 3 == 0) && (i % 5 == 0))
+			printf("FizzBuzz ");
 		else if ((i % 5) == 0)
-			_putchar("buzz");
+			printf("Buzz ");
 		else if ((i % 3) ==0)
-			_putchar("fizz");
+		{
+			if (i != 100)
+			{
+				printf("Fizz ");
+			}
+			else
+			{
+				printf("Buzz ");
+			}
 		else
-			_putchar(i);
-		_putchar(' ');
-		_putchar('\n');
+		{
+			printf("%d",i);
+		}
+		}
+		print("\n");
 	}
+}
 }
