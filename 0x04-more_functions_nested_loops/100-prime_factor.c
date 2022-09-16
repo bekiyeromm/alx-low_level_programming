@@ -9,18 +9,12 @@ int main(void)
 	long a = 612852475143;
 	
 	int i;
-	while (i++ < a / 2)
+
+	for (i = 3; i < 782849; i = i + 2)
+	while ((n % i == 0) && (n != i)
 	{
-		if(a % i ==0)
-		{
-			a / =2;
-			continue;
-		}
-		for (i = 3; i < a / 2; i + = 2)
-		{
-			if (a % i == 0)
-				a / = i;
-		}
+	a = a / 2;
 	}
-	printf("%d",a);
+	printf("%lu\n", a);
+	return (0);
 }
