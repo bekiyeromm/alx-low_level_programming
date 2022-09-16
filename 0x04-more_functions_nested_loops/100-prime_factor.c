@@ -6,12 +6,11 @@
  */
 int main(void)
 {
-	unsigned long int a = 612852475143;
-	int i;
+	unsigned long int i, a = 612852475143;
 
 	for (i = 3; i < 782849; i = i + 2)
-	while ((a % i == 0) && (a != i)
 	{
+	while ((a % i == 0) && (a != i))
 	a = a / i;
 	}
 	printf("%lu\n", a);
