@@ -18,8 +18,8 @@ void print_diagonal(int n)
 			for (k = i; k <= i; k++)
 			{
 				_putchar('\\');
-				_putchar('\n');
 			}
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
