@@ -8,5 +8,8 @@
  */
 void _puts(char *str)
 {
-	_putchar(str);
+	char st[50];
+	str = st;
+	while(*s!='\0')
+		_putchar(*str++);
 }
