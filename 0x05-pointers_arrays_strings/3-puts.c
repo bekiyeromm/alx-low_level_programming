@@ -21,5 +21,5 @@ void _puts(char *str)
 		temp[i] = ch;
 	}
 	temp[i] = 0;
-	puts(temp);
+	_putchar(temp);
 }
