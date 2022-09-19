@@ -11,7 +11,7 @@ void _puts(char *str)
 	char st[30];
 
 	str = st;
-	while (*str != '\o')
+	while (*str != '\0')
 	{
 		_putchar(*str++);
 	}
