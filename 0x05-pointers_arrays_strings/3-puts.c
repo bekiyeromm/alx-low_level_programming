@@ -9,7 +9,8 @@
 void _puts(char *str)
 {
 	char st[50];
+
 	str = st;
-	while(*s!='\0')
+	while(*str != '\0')
 		_putchar(*str++);
 }
