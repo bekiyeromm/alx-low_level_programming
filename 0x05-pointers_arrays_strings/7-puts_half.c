@@ -13,12 +13,12 @@ void puts_half(char *str)
 	l = strlen(str);
 	for (i = l; i >= 0; i--)
 	{
-		if (l % 2 == 0)
-			s = l / 2;
+		if (l % 2 != 0)
+			s = (l / 2) + 1;
 		else
-			s = (l - 1) / 2;
+			s = l / 2;
 	}
-	for (j = s + 1; j < l; j++)
+	for (j = s; j < l; j++)
 	{
 		printf("%c", *(str + j));
 	}
