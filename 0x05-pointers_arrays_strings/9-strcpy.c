@@ -1,9 +1,11 @@
 #include<stdio.h>
 #include "main.h"
+#include<string.h>
 /**
- *
- *
- *
+ * *strcpy -copy
+ * @dest: destination
+ * @src: source
+ * Return: always true
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -11,7 +13,7 @@ char *_strcpy(char *dest, char *src)
 
 	for (i = 0; i <= strlen(src); i++)
 	{
-		if (*str != '\0')
+		if (*(str + i) != '\0')
 		dest[i] = src[i];
 		return (dest);
 	}
