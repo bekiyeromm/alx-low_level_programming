@@ -26,4 +26,4 @@ str[i] == '?' || str[i] == '!' || str[i] == ';'))
 			i++;
 	}
 	return (str);
-}i
+}
