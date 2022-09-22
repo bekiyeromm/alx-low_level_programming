@@ -8,7 +8,7 @@
  */
 char *string_toupper(char *)
 {
-	cahr str1[50];
+	char str1[50];
 
 	int i;
 
