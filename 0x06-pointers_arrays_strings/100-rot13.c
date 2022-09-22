@@ -6,7 +6,7 @@
  * Return: returns the string
  *
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int i, j;
 
