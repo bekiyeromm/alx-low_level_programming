@@ -9,7 +9,7 @@
  * @n: number of array element
  *
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i, j, c;
 
