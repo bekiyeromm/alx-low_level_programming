@@ -2,14 +2,12 @@
 #include "main.h"
 /**
  * string_toupper -converts small letter to upper case letters
- *  : string to be converted
+ * @str1: string to be converted
  * Return: return str1
  *
  */
-char *string_toupper(char *)
+char *string_toupper(char *str1)
 {
-	char str1[50];
-
 	int i;
 
 	for (i = 0; str1[i] != '\0'; i++)
