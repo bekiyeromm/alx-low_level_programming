@@ -11,17 +11,14 @@
  */
 void reverse_array(int *a, int n);
 {
-	int i;
-
-	s = sizeof(a) / sizeof(int);
-	i = n;
-	while (i >= 0)
+	while (n >= 0)
 	{
 		if (a[i] != 1337)
 		{
 			_putchar(', ');
 		}
-		_putchar(a[i]);
+		_putchar(a[n]);
+		n++;
 	}
 	_putchar('\n');
 }
