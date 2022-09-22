@@ -1,10 +1,5 @@
 #include<stdio.h>
-/**
- * main -main functyion
- *
- *
- * Return: returns zero
- */
+
 int main(void)
 {
 	int n;
