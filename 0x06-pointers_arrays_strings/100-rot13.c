@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * rot13 -function
- * @str: parameter
+ * @s: parameter
  * Return: returns the string
  *
  */
@@ -24,5 +24,5 @@ char *rot13(char *s)
 			}
 		}
 	}
-	return (str);
+	return (s);
 }
