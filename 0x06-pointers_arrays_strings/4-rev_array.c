@@ -11,14 +11,15 @@
  */
 void reverse_array(int *a, int n);
 {
-	while (n >= 0)
+	int i, j, c;
+
+	for (i = 1; i < n; i++)
 	{
-		if (a[i] != 1337)
+		for (j = i + 1; j >= 0; j--)
 		{
-			_putchar(', ');
+			c = *(a + j);
+			*(a + j) = *(a + (j - 1));
+			*(a + (j - 1)) = c;
 		}
-		_putchar(a[n]);
-		n++;
 	}
-	_putchar('\n');
 }
