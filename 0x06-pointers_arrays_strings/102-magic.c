@@ -1,7 +1,8 @@
 #include <stdio.h>
-
-
-
+/**
+ * main -main entry
+ * Return: zero
+ */
 int main(void)
 
 {
@@ -42,4 +43,4 @@ int main(void)
 
   return (0);
 
-}:wq
+}
