@@ -4,8 +4,6 @@
  * print_number -function
  *
  * @n: parameter
- *
- *
  */
 void print_number(int n)
 {
