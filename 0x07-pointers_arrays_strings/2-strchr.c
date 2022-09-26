@@ -2,7 +2,7 @@
 /**
  * _strchr -returns first occurance of c
  *
- * @s: char c is searched from 
+ * @s: char c is searched from
  *
  * @c: character to be searched
  * Return: returns c
