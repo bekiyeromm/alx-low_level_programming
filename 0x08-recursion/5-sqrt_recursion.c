@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* sqrt_check - Checks for the square root of c
+* sqrcheck - Checks for the square root of c
 *
 * @a: sqrt gues
 *
