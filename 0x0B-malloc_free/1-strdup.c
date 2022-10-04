@@ -12,11 +12,9 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (str[i])
+	for (i = 0; str[i]; i++)
 	{
-		new_str = malloc(sizeof(char) * l);
-		i++;
+		new_str = malloc(sizeof(char) * (l + 1));
 	}
 	if (new_str == NULL)
 		return (NULL);
