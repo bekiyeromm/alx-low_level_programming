@@ -7,15 +7,14 @@
  */
 char *_strdup(char *str)
 {
-	int i, j, l = strlen(str);
+	int i, j, l;
 	char *new_str;
 
 	if (str == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
-	{
-		new_str = malloc(sizeof(char) * (l + 1));
-	}
+		l++;
+	new_str = malloc(sizeof(char) * (l + 1));
 	if (new_str == NULL)
 		return (NULL);
 	j = 0;
