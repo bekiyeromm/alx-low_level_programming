@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strdup -function to copy and from str to new_str
+ * _strdup -function to copy and from str to new_str
  *
  * @str: string to be copied
  * Return: return the newly created string
@@ -12,7 +12,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	i = 1;
+	i = 0;
 	while (str[i])
 	{
 		new_str = malloc(sizeof(char) * l);
