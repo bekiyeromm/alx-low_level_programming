@@ -20,6 +20,6 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s1[i]; i++)
 		concat_string[i] = s1[i];
 	for (i = 0; s2[i]; i++)
-		concat_string[i + len1] = s2[i];
+		concat_string[i++ + len1] = s2[i];
 	return (concat_string);
 }
