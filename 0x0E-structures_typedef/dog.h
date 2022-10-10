@@ -4,6 +4,12 @@
 #include<string.h>
 #include<stdlib.h>
 #endif
+/**
+ * struct dog -structure tag name
+ * Description: creates struct variable
+ * of type dog
+ *
+ */
 struct dog
 {
 	char *name;
