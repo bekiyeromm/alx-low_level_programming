@@ -3,7 +3,6 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-#endif
 /**
  * struct dog -structure tag name
  * Description: creates struct variable
@@ -16,3 +15,4 @@ struct dog
 	char *owner;
 	float age;
 };
+#endif
