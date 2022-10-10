@@ -7,7 +7,9 @@
  * struct dog -structure tag name
  * Description: creates struct variable
  * of type dog
- *
+ * @name: name of dog
+ * @owner: owner of dog
+ * @age: age of dog
  */
 struct dog
 {
