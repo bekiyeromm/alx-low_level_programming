@@ -3,10 +3,10 @@
  * int_index -prints idex to which matches
  * found
  * @array: array
- *
  * @size: size of the array
- *
  * @cmp: pointer to the function
+ * Return: -1 if size <= 0 and if no element
+ * and returns inder if true
  *
  */
 int int_index(int *array, int size, int (*cmp)(int))
