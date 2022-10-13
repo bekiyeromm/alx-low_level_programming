@@ -7,7 +7,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	size_t i = 0 ,j = 0, k;
+	size_t i = 0, j = 0, k;
 	char *str;
 	va_list ap;
 	const char txt[] = "cifs";
@@ -25,7 +25,7 @@ void print_all(const char * const format, ...)
 			}
 			k++;
 		}
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
 				printf("%c", va_arg(ap, int)), j = 1;
