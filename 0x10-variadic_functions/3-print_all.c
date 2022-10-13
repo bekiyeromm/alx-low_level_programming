@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
 /**
  * print_all -prints any thing
- *
  * @format: is a list of types of arguments passed to the function
  * Return: nothing
  */
@@ -22,8 +21,7 @@ void print_all(const char * const format, ...)
 			{
 				printf(", ");
 				break;
-			}
-			k++;
+			} k++;
 		}
 		switch (format[i])
 		{
@@ -45,9 +43,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", str);
 				break;
-		}
-		i++;
+		} i++;
 	}
-	printf("\n");
-	va_end(ap);
+	printf("\n"), va_end(ap);
 }
