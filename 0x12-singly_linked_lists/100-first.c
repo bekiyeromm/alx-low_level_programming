@@ -3,9 +3,9 @@
 void fun(void) __attribute__ ((constructor));
 
 /**
- *entryFunc - function to print before main function
+ * fun - function to print before main function
  *
- *Return: Void
+ * Return: Void
  */
 
 void fun(void)
