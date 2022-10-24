@@ -12,7 +12,8 @@ size_t print_listint(const listint_t *h)
 
 	if (h == NULL)
 		return (0);
-	temp = malloc(sizeof(listint_t));
+	/*temp = malloc(sizeof(listint_t));*/
+	/* i comment above b/c it creates memory likage*/
 	temp = h;
 	while (temp != NULL)
 	{
