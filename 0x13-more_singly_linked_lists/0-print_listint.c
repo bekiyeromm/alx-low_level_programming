@@ -7,19 +7,16 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *temp;
 	unsigned int count = 0;
 
 	if (h == NULL)
 		return (0);
-	/*temp = malloc(sizeof(listint_t));*/
-	/* i comment above b/c it creates memory likage*/
-	temp = h;
-	while (temp != NULL)
+
+	while (h != NULL)
 	{
-		printf("%d\n", temp->n);
+		printf("%d\n", h->n);
+		h= h->next;
 		count++;
-		temp = temp->next;
 	}
 	return (count);
 }
