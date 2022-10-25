@@ -6,7 +6,7 @@
  *
  * @n: node value
  *
- * Return: the address of new node 
+ * Return: the address of new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -30,5 +30,5 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	ptr2->next = ptr->next;
 	ptr->next = ptr2;
-	return (ptr);
+	return (ptr2);
 }
