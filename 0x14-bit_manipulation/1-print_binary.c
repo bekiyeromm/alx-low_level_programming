@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	int i;
 	unsigned int j, k, mask;
 
-	for (i = 16; i >= 0; i--)
+	for (i = 32; i >= 0; i--)
 	{
 		j = i;
 		mask = 1 << j;
