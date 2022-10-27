@@ -15,7 +15,7 @@ return (-1);
 
 i = 1 << index;
 i &= n;
-i >> = index;
+i = i >> index;
 
 return (i);
 }
