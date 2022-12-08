@@ -1,10 +1,11 @@
 #include "lists.h"
 /**
- * insert_dnodeint_at_inde - inserts anode at given index
+ * insert_dnodeint_at_index - inserts anode at given index
  * @h: pointer to head
- * @idx: index to which value will be inserted
- * 
+ * @idx: index to which value will be inserted 
  * @n: value to be inserted at index idx
+ *
+ * Return: the address of the new node, or NULL if it failed
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
@@ -16,6 +17,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
+	new_node->next = NULL;
+	new_node->prev = NULL;
 	if (idx == 0)
 	{
 		new_node->next = (*h);
@@ -29,7 +32,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	while (temp)
 	{
-		i += 1;
+		i++;
 		if (i == idx)
 		{
 			new_node->prev = temp;
