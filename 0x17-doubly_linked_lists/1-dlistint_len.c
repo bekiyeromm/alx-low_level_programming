@@ -12,7 +12,7 @@ size_t dlistint_len(const dlistint_t *h)
 
 	if (h == NULL)
 		return (0);
-	temp = h;
+	temp = (dlistint_t *)h;
 	while (temp)
 	{
 		count += 1;
