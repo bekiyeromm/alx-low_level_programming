@@ -1,40 +1,40 @@
 #include "lists.h"
+
 /**
- * insert_dnodeint_at_index - inserts anode at given index
- * @h: pointer to head
- * @idx: index to which value will be inserted
- * @n: value to be inserted at index idx
- *
- * Return: the address of the new node, or NULL if it failed
+ * insert_dnodeint_at_index - function to insert new node at given index
+ * @h: input pointer to head of dlistint_t list
+ * @idx: input index or n to add new node at, starting from 0
+ * @n: input data to add for new node
+ * Return: the node at index or NULL
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int i = 0;
 	dlistint_t *new_node, *temp;
+	unsigned int c = 0;
 
-	if (h == NULL)
-		return (new_node);
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
 	new_node->n = n;
-	new_node->next = NULL;
 	new_node->prev = NULL;
+	new_node->next = NULL;
 
+	if (h == NULL)
+		return (new_node);
 	if (idx == 0)
 	{
 		new_node->next = (*h);
 		if ((*h) != NULL)
 			(*h)->prev = new_node;
-		(*h) = new_node;
+		*h = new_node;
 		return (new_node);
 	}
-	temp = *h;
 
-	while (temp)
+	temp = *h;
+	while (temp != NULL)
 	{
-		i++;
-		if (i == idx)
+		c++;
+		if (c == idx)
 		{
 			new_node->prev = temp;
 			new_node->next = temp->next;
