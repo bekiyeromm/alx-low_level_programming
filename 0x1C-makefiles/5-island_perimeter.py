@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """5-island_perimeter module"""
 
+
 def island_perimeter(grid):
 
     """returns the permiter of island"""
@@ -22,4 +23,4 @@ def island_perimeter(grid):
                     count = count + 1
                 if i == length or grid[i + 1][j] != 1:
                     count = count + 1
-    return  count
+    return count
