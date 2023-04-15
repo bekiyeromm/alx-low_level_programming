@@ -3,8 +3,7 @@
 /**
  * binary_search - performs binary search
  * @array: pointer to the first element to search in
- * @left: lower bound
- * @right: uper bound
+ * @size: size of the array
  * @value: value to be searched
  * Return: the searched value index or -1
  */
