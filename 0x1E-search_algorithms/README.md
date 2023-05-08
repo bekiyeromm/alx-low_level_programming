@@ -44,9 +44,9 @@ You will be asked to write files containing big O notations. Please use this for
  - log(n) -> O(log(n))
  - n * log(n) -> O(nlog(n))
 
-# Tasks
-# 0. Linear search
-# mandatory
+### Tasks
+### 0. Linear search
+### mandatory
 Write a function that searches for a value in an array of integers using the [Linear search algorithm](https://en.wikipedia.org/wiki/Linear_search)
 
  - Prototype : int linear_search(int *array, size_t size, int value);
@@ -56,7 +56,7 @@ Write a function that searches for a value in an array of integers using the [Li
  - Your function must return the first index where value is located
  - If value is not present in array or if array is NULL, your function must return -1
  - Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
- 
+ 	
 	wilfried@0x1E-search_algorithms$ cat 0-main.c 
 	#include <stdio.h>
 	#include <stdlib.h>
@@ -104,13 +104,13 @@ Write a function that searches for a value in an array of integers using the [Li
 	Value checked array[9] = [9]
 	Found 999 at index: -1
 	
-## Repo:
+### Repo:
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 0-linear.c
  
-# 1. Binary search
-## mandatory
+### 1. Binary search
+### mandatory
 Write a function that searches for a value in a sorted array of integers using the [Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 Prototype : int binary_search(int *array, size_t size, int value);
 Where array is a pointer to the first element of the array to search in
@@ -121,8 +121,8 @@ Where array is a pointer to the first element of the array to search in
  - You can assume that value won’t appear more than once in array
  - If value is not present in array or if array is NULL, your function must return -1
  - You must print the array being searched every time it changes. (e.g. at the beginning and when you search a subarray) (See example)
- 	
-	 wilfried@0x1E-search_algorithms$ cat 1-main.c 
+	
+	wilfried@0x1E-search_algorithms$ cat 1-main.c 
 	#include <stdio.h>
 	#include <stdlib.h>
 	#include "search_algos.h"
@@ -162,49 +162,48 @@ Where array is a pointer to the first element of the array to search in
 	Searching in array: 9
 	Found 999 at index: -1
 	
-#Repo:
+### Repo:
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
-## File: 1-binary.c
+### File: 1-binary.c
  
-# 2. Big O #0
-## mandatory
+### 2. Big O #0
+### mandatory
 What is the time complexity (worst case) of a linear search in an array of size n?
-## Repo:
+### Repo:
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 2-O
 
 # 3. Big O #1
-## mandatory
+### mandatory
 ### What is the space complexity (worst case) of an iterative linear search algorithm in an array of size n?
-## Repo:
+### Repo:
 
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 3-O
  
-# 4. Big O #2
-## mandatory
+### 4. Big O #2
+### mandatory
 ### What is the time complexity (worst case) of a binary search in an array of size n?
-
-## Repo:
+### Repo:
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 4-O
  
-# 5. Big O #3
-## mandatory
+### 5. Big O #3
+### mandatory
 ### What is the space complexity (worst case) of a binary search in an array of size n?
 
-## Repo:
+### Repo:
 
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 5-O
  
-# 6. Big O #4
-## mandatory
+### 6. Big O #4
+### mandatory
 ### What is the space complexity of this function / algorithm?
 	
 	int **allocate_map(int n, int m)
@@ -219,14 +218,14 @@ What is the time complexity (worst case) of a linear search in an array of size 
 	     return (map);
 	}
 	
-## Repo:
+### Repo:
 
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 6-O
  
-# 7. Jump search
-## advanced
+### 7. Jump search
+### advanced
 ### Write a function that searches for a value in a sorted array of integers using the [Jump search algorithm](https://en.wikipedia.org/wiki/Jump_search)
 
  - Prototype : int jump_search(int *array, size_t size, int value);
@@ -239,7 +238,7 @@ What is the time complexity (worst case) of a linear search in an array of size 
  - You have to use the square root of the size of the array as the jump step.
  - You can use the sqrt() function included in <math.h> (don’t forget to compile with -lm)
  - Every time you compare a value in the array to the value you are searching for, you have to print this value (see example)
-
+	
 	wilfried@0x1E-search_algorithms$ cat 100-main.c 
 	#include <stdio.h>
 	#include <stdlib.h>
@@ -287,24 +286,24 @@ What is the time complexity (worst case) of a linear search in an array of size 
 	Value checked array[9] = [9]
 	Found 999 at index: -1
 	
-#Repo:
+### Repo:
 
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 100-jump.c
  
-# 8. Big O #5
-## advanced
+## 8. Big O #5
+### advanced
 ### What is the time complexity (average case) of a jump search in an array of size n, using step = sqrt(n)?
 
-# Repo:
+### Repo:
 
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 101-O
  
-# 9. Interpolation search
-## advanced
+### 9. Interpolation search
+### advanced
 ### Write a function that searches for a value in a sorted array of integers using the [Interpolation search algorithm](https://en.wikipedia.org/wiki/Interpolation_search)
 
  - Prototype : int interpolation_search(int *array, size_t size, int value);
@@ -351,14 +350,14 @@ What is the time complexity (worst case) of a linear search in an array of size 
 	Value checked array[2109] is out of range
 	Found 999 at index: -1
 	
-# Repo:
+### Repo:
 
-## GitHub repository: alx-low_level_programming
+### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 102-interpolation.c
  
-# 10. Exponential search
-## advanced
+### 10. Exponential search
+### advanced
 ### Write a function that searches for a value in a sorted array of integers using the [Exponential search algorithm](https://en.wikipedia.org/wiki/Exponential_search)
 
  - Prototype : int exponential_search(int *array, size_t size, int value);
@@ -372,7 +371,7 @@ What is the time complexity (worst case) of a linear search in an array of size 
  - Every time you compare a value in the array to the value you are searching for, you have to print this value (See example)
  - Once you’ve found the good range, you need to use a binary search:
  - Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
-
+	
 	wilfried@0x1E-search_algorithms$ cat 103-main.c 
 	#include <stdio.h>
 	#include <stdlib.h>
@@ -423,14 +422,14 @@ What is the time complexity (worst case) of a linear search in an array of size 
 	Searching in array: 99
 	Found 999 at index: -1
 	
-# Repo:
+### Repo:
 
 ### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 103-exponential.c
  
-# 11. Advanced binary search
-##advanced
+### 11. Advanced binary search
+### advanced
 You may have noticed that the basic binary search does not necessarily return the index of the first value in the array (if this value appears more than once in the array). In this exercise, you’ll have to solve this problem.
 
 ### Write a function that searches for a value in a sorted array of integers.
@@ -485,14 +484,14 @@ Every time you split the array, you have to print the new array (or subarray) yo
 	Searching in array: 9
 	Found 999 at index: -1
 	
-# Repo:
+### Repo:
 
-## GitHub repository: alx-low_level_programming
+### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 104-advanced_binary.c
  
-# 12. Jump search in a singly linked list
-## advanced
+### 12. Jump search in a singly linked list
+### advanced
 ### You might think that linear search is not as effective as any other algorithm, right? Well, we should see what happens with a singly linked list.
 
 Please define the following data structure in your search_algos.h header file:
@@ -526,7 +525,7 @@ Please define the following data structure in your search_algos.h header file:
  - You can use the sqrt() function included in <math.h> (don’t forget to compile with -lm)
  - Every time you compare a value in the list to the value you are searching, you have to print this value (see example)
  - NOTE: [You can find here](https://github.com/holbertonschool/0x1D.c/tree/master/listint) the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
- 	
+
 	wilfried@0x1E-search_algorithms$ cat 105-main.c 
 	#include <stdio.h>
 	#include <stdlib.h>
@@ -609,17 +608,16 @@ Please define the following data structure in your search_algos.h header file:
 	Value checked at index [14] = [76]
 	Value checked at index [15] = [99]
 	Found 999 at index: (nil)
-	
-# Repo:
 
-## GitHub repository: alx-low_level_programming
+### Repo:
+
+### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 105-jump_list.c
  
-# 13. Linear search in a skip list
-## advanced
+### 13. Linear search in a skip list
+### advanced
 As you see now, looking for a specific value in a singly linked list always leads to browse every element of the list. A common way to optimize the time complexity of a search in a singly linked list is to modify the list itself by adding an “express lane” to browse it. A linked list with an express lane is called a [skip list](https://en.wikipedia.org/wiki/Skip_list). This change does not come without consequences. Indeed, the space complexity of a search in this kind of list will grow as sizeof(skiplist_t) > sizeof(listint_t) (see example below).
-
 Please define the following data structure in your search_algos.h header file:
 	
 	/**
@@ -652,6 +650,7 @@ Please define the following data structure in your search_algos.h header file:
  - Every time you compare a value in the list to the value you are searching, you have to print this value (see example below)
  - NOTE: [You can find here](https://github.com/holbertonschool/0x1D.c/tree/master/skiplist) the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
  	
+	
 	wilfried@0x1E-search_algorithms$ cat 106-main.c 
 	#include <stdio.h>
 	#include <stdlib.h>
@@ -740,9 +739,10 @@ Please define the following data structure in your search_algos.h header file:
 	Value checked at index [15] = [99]
 	Found 999 at index: (nil)
 	
-# Repo:
 
-## GitHub repository: alx-low_level_programming
+### Repo:
+
+### GitHub repository: alx-low_level_programming
 ### Directory: 0x1E-search_algorithms
 ### File: 106-linear_skip.c
  
